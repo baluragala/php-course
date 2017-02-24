@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://localhost:8100/#/smof/references -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <script>
+      // Injected Ionic Go To URL Live Reload Plugin
+      window.LiveReloadPlugin_IonicGoToUrl = (function() {
+        var GOTO_KEY = "__ionic_goto_url__";
+        var HISTORY_GO_KEY = "__ionic_history_go__";
+        var GoToUrlPlugin = function(window, host) {
+          this.window = window;
+          this.host = host;
+        }
+        GoToUrlPlugin.identifier = "__ionic_goto_url__";
+        GoToUrlPlugin.version = "1.0";
+        GoToUrlPlugin.prototype.reload = function(path) {
+          try {
+            if(path) {
+              if(path.indexOf(GOTO_KEY) === 0) {
+                this.window.document.location = path.replace(GOTO_KEY, "");
+                return true;
+              }
+              if(path.indexOf(HISTORY_GO_KEY) === 0) {
+                this.window.document.history.go( parseInt(path.replace(HISTORY_GO_KEY, ""), 10));
+                return true;
+              }
+            }
+          } catch(e) {
+            console.log(e);
+          }
+          return false;
+        };
+        return GoToUrlPlugin;
+      })();
+    </script>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="./pat_files/ionic.css" rel="stylesheet">
+    <link href="./pat_files/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./pat_files/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="./pat_files/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./pat_files/smof.css">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="./pat_files/ionic.bundle.js"></script>
+    <script src="./pat_files/angular-resource.min.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="./pat_files/cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="./pat_files/app.js"></script>
+    <script src="./pat_files/controllers.js"></script>
+    <script src="./pat_files/services.js"></script>
+
+    <script src="./pat_files/angular-translate.min.js"></script>
+    <script src="./pat_files/angular-messages.min.js" type="text/javascript"></script>
+
+    
+        <!-- Latest compiled and minified JavaScript -->
+    <script src="./pat_files/jquery.js"></script>
+    <script src="./pat_files/bootstrap.min.js"></script>
+
+  </head>
+
+  <body ng-app="starter" class="grade-a platform-browser platform-win32 platform-ready">
+     
+    <ion-nav-view class="view-container" nav-view-transition="ios" nav-view-direction="enter" nav-swipe=""><ion-view class="pane" nav-view="cached" style="opacity: 0.9; transform: translate3d(-33%, 0px, 0px);">
+  
+  <div class="container fixedDiv">
+   <a href="" title="SmofKabiven" class="logo"><img src="./pat_files/logo.png" alt="SmofKabiven" width="281"></a>
+  <div class="userGuest">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a data-target="#user" role="tab" data-toggle="tab">User</a></li>
+    <li role="presentation"><a data-target="#guest" role="tab" data-toggle="tab">Guest</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+    <div role="tabpanel" class="tab-pane active" id="user">
+      <form ng-submit="doLogin()" name="loginForm" novalidate="" class="ng-dirty ng-valid-parse ng-valid-required ng-valid-email ng-valid ng-submitted" style="">
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control ng-dirty ng-valid-required ng-touched ng-valid-email ng-valid" placeholder="Username" required="" autofocus="" ng-model="loginData.userName" name="userName" style="">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control ng-dirty ng-valid-parse ng-valid ng-valid-required ng-touched" placeholder="Password" required="" ng-model="loginData.password" name="password" style="">
+            
+            <button class="btn btn-lg btn-primary btn-block blueBg" type="submit">Sign in</button>
+            <div class="row">
+              <a href="http://localhost:8100/#/forgotpassword" title="Forgot Password?" class="pull-left">Forgot Password?</a>
+                <a href="http://localhost:8100/#/signup" title="SIGN UP" class="pull-right blackT text-right">SIGN UP</a>
+            </div>
+            <div class="row appInfoRow">
+              <a href="http://localhost:8100/#/about" title="About SmofKabiven" class="pull-left BlueDarkT text-right col-lg-6">About SmofKabiven<sup>®</sup></a>
+                <a href="http://localhost:8100/#/appinfo" title="Privacy Information" class="pull-left BlueDarkT col-lg-6 ">Privacy Information</a>
+            </div>            
+      </form>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="guest">
+      <form ng-submit="doGuestLogin()" name="guestLoginForm" novalidate="" class="ng-pristine ng-valid">
+
+          <p>Entering as a Guest allows you to view this app in English. For full functionality, please create a user profile by choosing “Sign Up”, below.
+</p>
+            <button class="btn btn-lg btn-primary btn-block blueBg" type="submit">CONTINUE AS GUEST</button>
+             <div class="row text-center w100">
+                <a href="http://localhost:8100/#/signup" title="SIGN UP" class=" blackT ">SIGN UP</a>
+            </div>
+            <div class="row appInfoRow">
+              <a href="http://localhost:8100/#/about" title="About SmofKabiven" class="pull-left BlueDarkT text-right col-lg-6">About SmofKabiven<sup>®</sup></a>
+                <a href="http://localhost:8100/#/appinfo" title="Privacy Information" class="pull-left BlueDarkT col-lg-6 ">Privacy Information</a>
+            </div>
+          </form>
+    </div>
+  </div>
+
+</div></div>
+</ion-view><ion-view class="pane" nav-view="cached" style="opacity: 0; box-shadow: rgba(0, 0, 0, 0) 0px 0px 10px; transform: translate3d(0%, 0px, 0px);">
+  
+  <div class="container fixedDiv">
+  	<img class="first" width="180" alt="fresenius" src="./pat_files/fresenius.png">
+   <a href="" title="SmofKabiven" class="logo"><img src="./pat_files/logo.png" alt="SmofKabiven" width="281"></a>
+  <div class="container insideContainer aboutUs">
+	<p><b>SmofKabiven® and SmofKabiven® Electrolyte Free </b>are indicated for intravenous infusion into a central vein as parenteral nutrition 
+for adult patients when oral or enteral nutrition is impossiale, insufficient or contraindicated.</p>
+<p>Consult the Product Monographs at <a onclick="window.open(this.href, &#39;_system&#39;, &#39;location=yes&#39;); return false;" ng-href="http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-PM-Aug-2015.pdf" target="" class="highLight" href="http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-PM-Aug-2015.pdf">here</a> and <a class="highLight" onclick="window.open(this.href, &#39;_system&#39;, &#39;location=yes&#39;); return false;" ng-href="http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-EF-Aug-2015.pdf" href="http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-EF-Aug-2015.pdf">here</a> for important information on contraindications, warnings, precautions, adverse reactions, interactions, and dosing.The
+Product Monographs are also available by calling Medical Information at 1-877-821-7724.</p>
+	<button class="btn btn-lg btn-primary btn-block blueBg btn-bottm" type="button" ui-sref="smof.patientinfo" href="#/smof/patientinfo">PROCEED</button>
+     
+
+  <!-- Nav tabs -->
+
+  <!-- Tab panes -->
+
+</div>
+<div class="row text-center w100">
+                Fresenius Kabi © 2015. All rights reserved
+      </div>
+</div>
+
+</ion-view><ion-side-menus enable-menu-with-back-views="true" class="pane view" nav-view="active" style="opacity: 1; transform: translate3d(0%, 0px, 0px);">
+  <ion-side-menu-content class="menu-content pane">
+    <ion-nav-bar class="bar-stable nav-bar-container nav-bar-has-subheader" nav-bar-transition="ios" nav-bar-direction="forward" nav-swipe="">
+      <ion-nav-back-button class="hide"></ion-nav-back-button>
+
+      <ion-nav-buttons side="left" class="hide"></ion-nav-buttons>
+       <ion-nav-buttons side="right" class="hide"></ion-nav-buttons>
+    <div class="nav-bar-block" nav-bar="active"><ion-header-bar class="bar-stable bar bar-header disable-user-behavior" align-title="center"><button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item"><i class="icon ion-ios-arrow-back"></i> 
+      <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title">Back</span><span class="previous-title hide">undefined</span></span></button><div class="buttons buttons-left header-item"><span class="left-buttons">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </span></div><div class="title title-center header-item" style="transform: translate3d(0px, 0px, 0px); left: 101px; right: 101px;"><span class="nav-bar-title">
+          SAFETY
+        </span></div><div class="buttons buttons-right header-item"><span class="right-buttons">
+       <a class="pull-right calc" href="http://localhost:8100/#/smof/calculator" title="calculation"><img src="./pat_files/calc.png" alt="calculation" width="21" height="21"></a>    
+      </span></div></ion-header-bar></div><div class="nav-bar-block" nav-bar="cached"><ion-header-bar class="bar-stable bar bar-header disable-user-behavior" align-title="center"><button ng-click="$ionicGoBack()" class="button back-button hide buttons  button-clear header-item" style="opacity: 0;"><i class="icon ion-ios-arrow-back"></i> 
+      <span class="back-text" style="transform: translate3d(0px, 0px, 0px); opacity: 0;"><span class="default-title">Back</span><span class="previous-title hide">undefined</span></span></button><div class="buttons buttons-left header-item" style="opacity: 0;"><span class="left-buttons">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </span></div><div class="title title-center header-item" style="left: 47px; right: 47px; transform: translate3d(-595px, 0px, 0px); opacity: 0;"><span class="nav-bar-title">
+<img src="./pat_files/smofLogo.png" alt="Smofkabiven" width="134">
+</span></div><div class="buttons buttons-right header-item" style="opacity: 0;"><span class="right-buttons">
+       <a class="pull-right calc" href="http://localhost:8100/#/smof/calculator" title="calculation"><img src="./pat_files/calc.png" alt="calculation" width="21" height="21"></a>    
+      </span></div></ion-header-bar></div></ion-nav-bar>
+    
+    <ion-nav-view name="menuContent" class="view-container" nav-view-transition="ios" nav-view-direction="forward" nav-swipe="">
+
+
+  <ion-view view-name="Patient Info" hide-back-button="true" class="mainPage pane" nav-view="cached" style="opacity: 0.9; transform: translate3d(-33%, 0px, 0px);">  <!--  Please don not freeze this tag with any style-->
+
+<ion-nav-title class="hide"></ion-nav-title>
+<ion-header-bar class="bar bar-subheader bar-header disable-user-behavior">
+        
+      <ul class="nav nav-tabs blueBg patieninfoTabs" role="tablist" style="border:none">
+        <li role="presentation" class="active"><a href="http://localhost:8100/#/smof/patientinfo" aria-controls="patientInfo" role="tab" data-toggle="tab" class="ng-binding">PATIENT INFO</a></li>
+        <li role="presentation"><a href="http://localhost:8100/#/smof/corevariables" aria-controls="corevariables" role="tab" data-toggle="tab" class="ng-binding">CORE VARIABLES</a></li>
+        <li role="presentation" class="last"><a href="http://localhost:8100/#/smof/dosingrate" aria-controls="dosingRate" role="tab" data-toggle="tab" class="ng-binding">DOSING RATE</a></li>
+      </ul>
+        
+</ion-header-bar>
+	<ion-content class="scroll-content ionic-scroll  has-subheader has-footer"><div class="scroll" style="transform: translate3d(0px, 0px, 0px) scale(1);"> <!--  Please don not freeze this tag with any style-->
+	<div class="container p0 patient-container">
+    
+  <div class="patientInfo">
+
+  <!-- Nav tabs -->
+      
+
+  <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="patientInfo">
+          <div class="row row1">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center ">
+                      <img src="./pat_files/genderActive.png" alt="gender" width="13">
+
+                        <label class="toggle toggle-positive">
+                           <input type="checkbox" ng-model="patientInfoData.gender" ng-change="calcuateBodyMasses()" class="ng-pristine ng-untouched ng-valid">
+                           <div class="track">
+                             <div class="handle"></div>
+                           </div>
+                        </label>
+               
+                       <!-- <img src="assets/images/gender.png" alt="gender" width="13"/>-->
+                       <img src="./pat_files/genderFemale.png" alt="gender" width="13">
+                        <span class="ng-binding">Gender</span>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center ">
+                      <input type="number" name="height" ng-model="patientInfoData.height" placeholder="0" ng-change="calcuateBodyMasses()" ng-blur="validatePatientInfo(&#39;height&#39;)" class="blueLightT ng-pristine ng-untouched ng-valid"> 
+                       
+                        
+                        <span class="inlineTxt ng-binding">Height in </span>
+                        <select ng-model="patientInfoData.heightUOM" ng-change="calcuateBodyMasses()" class="form-control select4 ng-pristine ng-untouched ng-valid">
+                              <option value="cm">cm</option>
+                              <option value="in">in</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center ">
+                      <input type="number" ng-model="patientInfoData.weight" placeholder="0" ng-change="calcuateBodyMasses()" class="blueLightT ng-pristine ng-untouched ng-valid" ng-blur="validatePatientInfo(&#39;weight&#39;)">
+
+                       <span class="inlineTxt ng-binding">Weight in </span>
+                      <select ng-model="patientInfoData.weightUOM" ng-change="calcuateBodyMasses()" class="form-control select4 ng-pristine ng-untouched ng-valid">
+                            <option value="kg">kg</option>
+                            <option value="lb">lb</option>
+                      </select>
+                       
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row row2">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center ">
+                      <input type="number" ng-model="patientInfoData.age" placeholder="0" ng-change="calcuateBodyMasses()" class="greenLightT ng-pristine ng-untouched ng-valid" ng-blur="validatePatientInfo(&#39;age&#39;)"> 
+                   <!-- <select class="greenLightT form-control">
+                          <option selected>Yrs</option>            
+                    </select> --> <span class="inlineTxt ng-binding">Age in </span> <span class="greyT inText ng-binding">(Yrs)</span>
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center ">
+                      <input type="number" class="greyT ng-pristine ng-untouched ng-valid" ng-model="patientInfoData.tmax" placeholder="0" ng-change="calcuateBodyMasses()" ng-blur="validatePatientInfo(&#39;tmax&#39;)"> 
+                      <!--<select class="greyT form-control">
+                            <option selected>C&deg;</option>            
+                      </select>--> <span class="inlineTxt ng-binding">T<sub>MAX</sub> in</span> <span class="greyT inText">°C</span>
+                        
+                      
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center ">
+                      <input type="number" class="greyT ng-pristine ng-untouched ng-valid" ng-model="patientInfoData.velocity" placeholder="0" ng-change="calcuateBodyMasses()" ng-blur="validatePatientInfo(&#39;velocity&#39;)"> 
+                    <!--<select class="greyT form-control">
+                          <option selected>ltr/min</option>            
+                    </select>-->
+                    <span class="inlineTxt ng-binding">V<sub>e</sub> in &nbsp;</span><span class="greyT inText">ltr/min</span>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row row3">
+               <h5 class="blueT text-center ng-binding">Frame Size</h5>
+              <ul>
+                  <li ng-class="{&#39;active&#39;:patientInfoData.framesize == &#39;Small&#39;}">
+                      <a href="" title="Small" ng-click="calcuateBodyMasses(&#39;Small&#39;)"><img src="./pat_files/small.png" alt="small" width="32"></a>
+                      <span class="blueLight1T ng-binding">Small</span>
+                  </li>
+                    <li ng-class="{&#39;active&#39;:patientInfoData.framesize == &#39;Medium&#39;}" class="active" style="">
+                      <a href="" title="medium" ng-click="calcuateBodyMasses(&#39;Medium&#39;)"><img src="./pat_files/medium.png" alt="medium" width="34"></a>
+                      <span class="greenT ng-binding">Medium</span>
+                    </li>
+                    <li ng-class=" {&#39;active&#39;:patientInfoData.framesize == &#39;Large&#39;}" class="last">
+                      <a href="" title="large" ng-click="calcuateBodyMasses(&#39;Large&#39;)"><img src="./pat_files/large.png" alt="Large" width="47"></a>
+                      <span class="orangeT ng-binding">Large</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="row row7">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 orangeBg text-center ">
+                      <span class="ng-binding">BMI</span>
+                      <h5 class="ng-binding">0</h5>
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 blueLightBg text-center ">
+                      <select class="select1 form-control ng-pristine ng-untouched ng-valid" ng-model="patientInfoData.reePennType" ng-change="refreshReePenn()"> 
+                          <option value="REE-Mifflin">REE-Mifflin</option>
+                          <option class="ng-binding" value="REE-PennState 2003">REE-PennState 2003</option>
+                          <option class="ng-binding" value="REE-PennState 2011">REE-PennState 2011</option>                         
+                        </select>
+                      <h5 class="ng-binding">0</h5>
+                      
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 greenLightBg text-center ">
+                      <span class="ng-binding">IBW (lbs)</span>
+                      <h5 class="ng-binding">0</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+              <p class="ng-binding">Please consult the Product Monographs for full dosing information, indications, contraindications and safety information for <b class="ng-binding">SmofKabiven<sup class="ng-binding">®</sup> <a target="" ng-href="http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-PM-Aug-2015.pdf" onclick="window.open(&#39;http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-PM-Aug-2015.pdf&#39;, &#39;_system&#39;, &#39;location=yes&#39;); return false;" class="ng-binding" href="http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-PM-Aug-2015.pdf">here</a></b> and <b class="ng-binding">SmofKabiven<sup class="ng-binding">®</sup> Electrolyte Free <a href="" onclick="window.open(&#39;http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-EF-Aug-2015.pdf&#39;, &#39;_system&#39;, &#39;location=yes&#39;); return false;" class="ng-binding">here</a></b></p>
+            </div>
+        </div>
+       
+        
+      </div>
+
+   </div>   
+    
+</div>
+</div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px;"></div></div></ion-content>
+
+<ion-footer-bar class="bar bar-footer">
+    <div class="panel-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <a href="http://localhost:8100/#/smof/references" title="Safety" class="pull-left text-center text-uppercase col-lg-6 col-md-6 col-sm-6 col-xs-6 ng-binding">Safety</a><!--<a href="#/smof/safety" title="safety" class="pull-left text-center text-uppercase col-lg-4 col-md-4 col-sm-4 col-xs-4">Safety</a>-->       
+<a href="http://localhost:8100/#/smof/feedback" title="feedback" class="pull-right text-center text-uppercase col-lg-6 col-md-6 col-sm-6 col-xs-6 ng-binding">Feedback</a>
+    </div>
+</ion-footer-bar>
+</ion-view><ion-view class="pane" nav-view="active" style="opacity: 1; box-shadow: rgba(0, 0, 0, 0) 0px 0px 10px; transform: translate3d(0%, 0px, 0px);">
+	<ion-nav-title class="hide"></ion-nav-title>
+	<ion-content class="scroll-content ionic-scroll  has-header"><div class="scroll" style="transform: translate3d(0px, -580px, 0px) scale(1);">
+    
+	<div class="reference blueBg">
+  
+  <!-- Tab panes -->
+      <div class="tab-content whiteBg reference">
+        <div role="tabpanel" class="tab-pane active" id="References">
+            <div class="row">
+            	<!--<h2>BMI(Body Mass Index)<span> = W/H2</span></h2>
+                <span>where W is the Weight and H is the height.</span>
+                <p>This calculation is applicable if W is in Kilograms (kg) and H is Meters(m).</p>
+                <h2>IBW Calculation:</h2>
+                <span>(IBW Calculation is based on the HAMWI)</span> -->
+                <h4>SAFETY:</h4>
+                         <p><b>INDICATIONS AND CLINICAL USE</b></p>
+   <p><b>SmofKabiven<sup>®</sup></b> [Amino acids with electrolytes, dextrose and lipid injectable emulsion (5.1 % &amp; 0.7 % / 12.7 % / 3.8 %); w/v] / <b>SmofKabiven<sup>®</sup>
+   Electrolyte Free </b>[Amino acids, dextrose and lipid injectable emulsion (5.1 % / 12.7 % / 3.8 %); w/v] is indicated for intravenous infusion into a central vein as parenteral nutrition for adult patients when oral or enteral nutrition is impossible, insufficient or contraindicated. </p>
+   <p>SmofKabiven®/ SmofKabiven® Electrolyte Free are three-component products. Each component is located in a separate chamber. Before use, the seals between the chambers must be broken to mix the components. </p>
+    <p>SmofKabiven®/ SmofKabiven® Electrolyte Free can be used in adults including geriatrics.</p>
+    <p>Consult the Product Monographs at click <a target="" ng-href="http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-PM-Aug-2015.pdf" onclick="window.open(&#39;http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-PM-Aug-2015.pdf&#39;, &#39;_system&#39;, &#39;location=yes&#39;); return false;" href="http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-PM-Aug-2015.pdf">here </a>
+and <a target="" ng-href="http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-EF-Aug-2015.pdf" onclick="window.open(&#39;http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-EF-Aug-2015.pdf&#39;, &#39;_system&#39;, &#39;location=yes&#39;); return false;" href="http://fresenius-kabi.ca/en/wp-content/uploads/sites/2/2015/07/SmofKabiven-EF-Aug-2015.pdf">here</a> for important information on:
+</p>
+    <ul>
+        <li>Contraindications in patients with: Hypersensitivity to fish-, egg-, soybean- or peanut protein or to any of the active ingredients or excipients, Severe hyperlipidemia, Severe liver insufficiency, Severe blood coagulation disorders, Congenital errors of amino acid metabolism, Severe renal insufficiency without access to hemofiltration or dialysis, Acute shock, Uncontrolled hyperglycemia, Pathologically elevated serum levels of any of the included electrolytes, General contraindications to infusion therapy: acute pulmonary edema, hyperhydration, and decompensated cardiac insufficiency, Hemophagocytoic syndrome, Unstable conditions (e.g. severe post-traumatic conditions, uncompensated diabetes mellitus, acute myocardial infarction, stroke, embolism, metabolic acidosis, severe sepsis, hypotonic dehydration, and hyperosomolar coma) </li>
+        <li>Most serious warnings and precautions including:
+            <ul>
+                <li>The infusion must be stopped immediately if any signs or symptoms of allergic reactions (such as fever, shivering, sweating, headache, skin rashes, or dyspnea) develop,</li>
+                <li>SmofKabiven® / SmofKabiven® Electrolyte Free should be infused with caution in conditions of impaired lipid metabolism, which may occur in patients with renal failure, diabetes mellitus, pancreatitis, impaired liver function, hypothyroidism, and sepsis,</li>
+                <li>To avoid risks associated with too rapid delivery, it is recommended to use a continuous and well-controlled infusion, if possible a volumetric pump,</li>
+                <li>Disturbances of the electrolyte and fluid balance (e.g. abnormally high or low serum levels of the electrolytes) should be corrected before starting the infusion of SmofKabiven,</li>
+                <li>SmofKabiven should be given with caution to patients prone to retaining electrolytes. Special monitoring is required at the beginning of any intravenous infusion. Should any abnormal sign occur, the infusion must be stopped.</li>
+                
+            </ul>
+        </li>
+        <li>Relevant warnings and precautions including: 
+            <ul>
+                <li>In malnourished patients, initiation of parenteral nutrition can precipitate fluid shifts resulting in pulmonary edema and congestive heart failure as well as a decrease in the serum concentration of potassium, phosphate, magnesium, and water soluble vitamins. These changes can occur within 24 to 48 hours. Therefore, careful and slow initiation of parenteral nutrition is recommended in this patient group, together with close monitoring and appropriate adjustments of fluid, electrolytes, minerals, and vitamins,</li>
+                <li>In patients with hyperglycemia, administration of exogenous insulin might be necessary,</li>
+                <li>Caution in conditions of impaired amino acid metabolism and of impaired lipid metabolism,</li>
+                <li>Lipid content may interfere with certain laboratory measurements,</li>
+                <li>Use with caution in patients with renal insufficiency,</li>
+                <li>Fluid and electrolyte balance, serum osmolarity, triglycerides, acid/base balance, blood glucose, liver and kidney function and blood count should be monitored throughout treatment.</li>
+            </ul>
+        </li>
+        <li>Conditions of clinical use, adverse reactions, drug interactions and dosing instructions.</li>
+    </ul>
+    <p>The Product Monographs are also available by calling Medical Information at 1-877-821-7724.</p>
+    <p>For complete information on Adverse Reactions, please refer to the Product Monographs. Side effects should be reported: online at MedEffect, By calling 1-866-234-2345 (toll-free) or in writing by completing a Consumer Side Effect Reporting Form available at MedEffect.</p>
+                <h4>Calculations</h4>
+
+                <p>Calculations presented within this application are for informational purposes only. They may not be useful in all patient groups. Should you have any questions contact us directly at 1-877-821-7724.</p>
+
+                <p>Body Mass Index (BMI) in kg/m<sup>2</sup> is equal to the weight in kilograms divided by the square of a patient’s height in meters. </p>
+                <p><b>Resting Energy Expenditure (REE):</b></p>
+                <ul>
+                	<li>Mifflin-St. Jeor (default)<br>Used to calculate the resting energy expenditure for healthy individuals
+                    <ul>
+                    	<li>Men: 10(weight in kg) + 6.25(height in cm) – 5(age in years) + 5</li>
+                        <li>Women: 10(weight in kg) + 6.25(height in cm) – 5(age in years) – 161 </li>
+                    </ul>
+                    </li>
+                    <li>Penn State<br>Predict energy expenditure in hospitalized patients and end of life
+                    	<ul>
+                        	<li> Penn State (2003)
+                            	<ul><li>REE (kcal/day) = (Mifflin value)(0.96) + T<sub>MAX</sub>(167) + V<sub>e</sub>(32) – 6212 </li></ul>
+                            </li>
+                            <li>Penn State (2011)
+                            	<ul><li>REE (kcal/day) = (Mifflin value)(0.71) +  T<sub>MAX</sub>(85) + V<sub>e</sub>(64) – 3085 </li></ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <p>V<sub>e</sub> = minute ventilation (litres/min) at the time of measurement as read from the ventilator<br>
+                     T<sub>MAX</sub> = maximum body temperature in the previous 24 hours (degrees Celsius)</p>
+                    <p>The HAMWI formula for IBW for individuals over 1.5 m tall:</p>
+                    <ul>
+                        <li>Men: 48 kg + 2.7 kg for every 2.54 cm over 1.5 m</li>
+                        <li>Women: 45 kg + 2.3 kg for every 2.54 cm over 1.5 m</li>
+                        <li>Frame Size:
+                            <ul>
+                                <li>Add 10% for Large frame</li>
+                                <li>If frame size is unavailable, assume Medium</li>
+                                <li>Subtract 10% for Small frame</li>
+                            </ul>
+                        </li>
+                    </ul>
+                        <p>The formulae are intended to be used for informational purposes only. They may not be useful in all patient groups.  </p>
+                        <h4>Reference</h4> 
+                        <p>Mueller CM, McClave, S, Kuhn JM. American Society for Parenteral and Enteral Nutrition. (2012). The A.S.P.E.N. Adult Nutrition Support Core Curriculum. 2nd ed. Silver Spring, MD: American Society for Parenteral and Enteral Nutrition.</p>
+                          
+    <p><img src="./pat_files/logo.png" alt="SmofKabiven®" width="150"><br>
+    <i style="font-style: italic;font-size:90%">Amino acids (+/- electrolytes), dextrose and lipid injectable emulsion
+5.1% &amp; 0.7% / 12.7% / 3.8%; w/v</i>
+</p>
+    <p>Fresenius Kabi<br>
+            Fresenius Kabi Canada Ltd.<br>
+            45 Vogell Road, Suite 200<br>
+            Richmond Hill, Ontario L4B 3P6</p>
+            <p><a href="http://localhost:8100/www.fresenius-kabi.ca" title="fresenius-kabi">www.fresenius-kabi.ca</a>
+            <br>© 2015. All rights reserved.</p>
+            </div>
+        </div>        
+      </div>
+
+   </div>
+
+	</div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 206px, 0px) scaleY(1); height: 184px;"></div></div></ion-content>
+</ion-view></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" is-enabled="true" width="275" class="menu menu-left" style="width: 275px;">
+    <ion-header-bar class="bar-stable bar bar-header disable-user-behavior">
+      <!--<h1 class="title">Smofkabiven</h1>-->
+    </ion-header-bar>
+    <ion-content class="scroll-content ionic-scroll  has-header"><div class="scroll" style="transform: translate3d(0px, 0px, 0px) scale(1);">
+      <ion-list class="disable-user-behavior"><div class="list">
+        <ion-item menu-close="" ng-click="doLogout()" class="item">
+          <img src="./pat_files/logout.png" alt="logout" width="16">Logout
+        </ion-item>
+        <ion-item menu-close="" ng-click="prepareUserProfile(&#39;userprofile&#39;)" class="item">
+          <img src="./pat_files/profile.png" alt="Profile" width="16">My Profile
+        </ion-item>
+        <ion-item menu-close="" ng-click="prepareUserProfile(&#39;changepassword&#39;)" class="item">
+          <img src="./pat_files/changepassword.png" alt="Password" width="16">Change Password
+        </ion-item>       
+      </div></ion-list>
+
+    </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px;"></div></div></ion-content>
+  </ion-side-menu>
+</ion-side-menus></ion-nav-view>
+  
+<script>//<![CDATA[
+document.write('<script src="//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1"><\/script>')
+//]]></script><script src="./pat_files/livereload.js"></script>
+
+
+<div class="backdrop"></div><div class="loading-container"><div class="loading"><ion-spinner class="spinner spinner-ios"><svg viewBox="0 0 64 64"><g stroke-width="4" stroke-linecap="round"><line y1="17" y2="29" transform="translate(32,32) rotate(180)"><animate attributeName="stroke-opacity" dur="750ms" values="1;.85;.7;.65;.55;.45;.35;.25;.15;.1;0;1" repeatCount="indefinite"></animate></line><line y1="17" y2="29" transform="translate(32,32) rotate(210)"><animate attributeName="stroke-opacity" dur="750ms" values="0;1;.85;.7;.65;.55;.45;.35;.25;.15;.1;0" repeatCount="indefinite"></animate></line><line y1="17" y2="29" transform="translate(32,32) rotate(240)"><animate attributeName="stroke-opacity" dur="750ms" values=".1;0;1;.85;.7;.65;.55;.45;.35;.25;.15;.1" repeatCount="indefinite"></animate></line><line y1="17" y2="29" transform="translate(32,32) rotate(270)"><animate attributeName="stroke-opacity" dur="750ms" values=".15;.1;0;1;.85;.7;.65;.55;.45;.35;.25;.15" repeatCount="indefinite"></animate></line><line y1="17" y2="29" transform="translate(32,32) rotate(300)"><animate attributeName="stroke-opacity" dur="750ms" values=".25;.15;.1;0;1;.85;.7;.65;.55;.45;.35;.25" repeatCount="indefinite"></animate></line><line y1="17" y2="29" transform="translate(32,32) rotate(330)"><animate attributeName="stroke-opacity" dur="750ms" values=".35;.25;.15;.1;0;1;.85;.7;.65;.55;.45;.35" repeatCount="indefinite"></animate></line><line y1="17" y2="29" transform="translate(32,32) rotate(0)"><animate attributeName="stroke-opacity" dur="750ms" values=".45;.35;.25;.15;.1;0;1;.85;.7;.65;.55;.45" repeatCount="indefinite"></animate></line><line y1="17" y2="29" transform="translate(32,32) rotate(30)"><animate attributeName="stroke-opacity" dur="750ms" values=".55;.45;.35;.25;.15;.1;0;1;.85;.7;.65;.55" repeatCount="indefinite"></animate></line><line y1="17" y2="29" transform="translate(32,32) rotate(60)"><animate attributeName="stroke-opacity" dur="750ms" values=".65;.55;.45;.35;.25;.15;.1;0;1;.85;.7;.65" repeatCount="indefinite"></animate></line><line y1="17" y2="29" transform="translate(32,32) rotate(90)"><animate attributeName="stroke-opacity" dur="750ms" values=".7;.65;.55;.45;.35;.25;.15;.1;0;1;.85;.7" repeatCount="indefinite"></animate></line><line y1="17" y2="29" transform="translate(32,32) rotate(120)"><animate attributeName="stroke-opacity" dur="750ms" values=".85;.7;.65;.55;.45;.35;.25;.15;.1;0;1;.85" repeatCount="indefinite"></animate></line><line y1="17" y2="29" transform="translate(32,32) rotate(150)"><animate attributeName="stroke-opacity" dur="750ms" values="1;.85;.7;.65;.55;.45;.35;.25;.15;.1;0;1" repeatCount="indefinite"></animate></line></g></svg></ion-spinner></div></div><div class="click-block click-block-hide"></div></body></html>

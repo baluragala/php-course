@@ -21,13 +21,29 @@ x value y   value   expressions   results
 
 5.Write a php program to find the given value is even or odd
 6.Write a php program to print all even numbers below 20;
-7.Write a php program to print all numbers that are divisible 3 and 5;
+7.Write a php program to print all numbers that are divisible 3 and 5 below 100;
 8.Write a php program to print multiplication table of given number till 20;
 Example $x=5 
+1 * 1 = 1
+..
+1 * 10 = 10
+
+2 * 1 = 20
+
 5 * 1 = 5
 .
 .
 5 * 20 = 100
 
+param1 => 5 param2 => 9
+validate form  
+
+Arrays:
+------
+array_fill - fill
+array_keys - get_keys
+array_split - split
+array_pop - pop
+array_push - push
 
 
