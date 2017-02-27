@@ -42,8 +42,32 @@ Arrays:
 ------
 array_fill - fill
 array_keys - get_keys
-array_split - split
+array_chunk - split
 array_pop - pop
 array_push - push
+print_r - printArray
+
+
+Recursion:
+----------
+
+factorial:
+
+string functions:
+-----------------
+strlen
+implode
+explode
+
+php form
+--------
+input - text box
+give a radio group -> all functions
+execute
+
+
+
+
+
 
 
