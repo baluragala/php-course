@@ -37,4 +37,7 @@ $addition = 'add';
 $t = function () {
 };
 echo $addition();
+
+
+
 ?>

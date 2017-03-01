@@ -67,6 +67,25 @@ execute
 
 
 
+cookies
+-------
+
+session
+-------
+1. create a login form, say you hard code user as phpadmin and password as p@ssw0rD
+2. give a courses list page
+   5 courses : 
+   title
+   description
+   start_date
+logout button
+3. Add course 
+	title
+    description
+    start_date
+	$_SESSION['COURSES'] = array(coures)
+
+
 
 
 
