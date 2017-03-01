@@ -6,9 +6,11 @@
  * Time: 10:00 PM
  */
 session_start();
+print_r(getallheaders());
 
-if (isset($_SESSION['ERROR']) && $_SESSION['ERROR'] != '')
-    echo "<span style='color:red'>" . $_SESSION['ERROR'] . "</span>"
+print_r(headers_list());
+if (isset($_GET['ERROR']) && $_GET['ERROR'] != '')
+    echo "<span style='color:red'>" . $_GET['ERROR'] . "</span>"
 ?>
 
 <html>

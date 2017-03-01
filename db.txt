@@ -1,0 +1,59 @@
+To log into db using mysql command line tool:
+1. open command promot
+2. mysql -u root
+
+to list databases:
+show databases;
+
+to siwtch db conext:
+use <database_name>
+eg.,  use test;
+
+
+to list all tables:
+show tables;
+
+
+SQL Language:
+-------------
+DDL - Database definition language
+DML - Database Manupulation
+INSERT
+UPDATE
+DELETE
+
+DCL - Control
+
+
+DDL
+---
+CREATE TABLE courses (title varchar(150), description varchar(500), price decimal(10,4));
+DROP TABLE <table_name>
+create table users (username varchar(50) NOT NULL, password varchar(50) NOT NULL);
+
+DML:
+---
+SELECT username, password FROM users;
+SELECT * FROM users;
+
+INSERT into users values('zeo','1234');
+DELETE from users where username='';
+
+INSERT INTO users values('zeo','1234',1);
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+
+update users set password=5678 where username='zeo';
+Query OK, 1 row affected (0.16 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Misc:
+-----
+describe users -> explains the structire of the table, cols and thier types
+
+INSERT:
+-------
+users -> 2 cols ->
+
+INSERT INTO users values()
+
+
