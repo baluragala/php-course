@@ -56,4 +56,48 @@ users -> 2 cols ->
 
 INSERT INTO users values()
 
+To destroy table data and structure:
+drop table USERS;
+
+ 
+create a php application which should have following functinalit
+- CRUD opeartions for username
+
+- first_name Mandatory
+- last_name Mandatory
+- email Mandatory | unique 
+- password Mandatory
+
+Table schema:
+-------------
+USERS
+    id  INT NOT NULL PRIMARY KEY
+	first_name VARCHAR(30) NOT NULL
+	last_name VARCHAR(30) NOT NULL
+	email VARCHAR(50) NOT NULL UNIQUE
+	password VARCHAR(50) NOT NULL
+
+
+$sql_create_table=<<<SQL
+CREATE TABLE USERS (
+	id  INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(30) NOT NULL,
+	last_name VARCHAR(30) NOT NULL,
+	email VARCHAR(50) NOT NULL UNIQUE,
+	password VARCHAR(50) NOT NULL
+)
+SQL;
+
+
+steps:
+1. verify if table exists?
+	a. does not exists, lets create it
+	b. do exist lets leave it
+	
+
+SQL : SELECT 1 FROM USERS LIMIT 1;
+	
+
+2. Insert data into table
+   INSERT INTO USERS(first_name,last_name,email,password) VALUES('TEST','TEST','TEST@TEST.com','1234')
 
