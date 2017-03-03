@@ -28,11 +28,12 @@ include('db.php');
         <th>Firstname</th>
         <th>Lastname</th>
         <th>Email</th>
+        <th>Actions</th>
     </tr>
     </thead>
     <tbody>
     <?php
-    $sql_get_users = "SELECT first_name, last_name, email from users";
+    $sql_get_users = "SELECT id, first_name, last_name, email from users";
     $connection = db_connect();
     $result = db_execute($connection, $sql_get_users);
     if ($result->num_rows > 0) {
@@ -40,7 +41,7 @@ include('db.php');
             $first_name = $row['first_name'];
             $last_name = $row['last_name'];
             $email = $row['email'];
-
+            $id = $row['id'];
             $table_row_html = <<<html
             <tr>
                 <td>
@@ -51,6 +52,11 @@ include('db.php');
                 </td>
                 <td>
                 $email
+                </td>
+                <td>
+                <a href="edit_user.php?id=$id">EDIT</a>
+                |
+                <a href="delete_user.php?id=$id">DELETE</a>
                 </td>
             </tr>
 html;

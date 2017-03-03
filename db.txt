@@ -101,3 +101,13 @@ SQL : SELECT 1 FROM USERS LIMIT 1;
 2. Insert data into table
    INSERT INTO USERS(first_name,last_name,email,password) VALUES('TEST','TEST','TEST@TEST.com','1234')
 
+3. Edit user
+   3.1 get user details using ID of the user - we need modify users.php - DONE
+   3.2 populare my form with details from database  - select query
+   SELECT first_name, last_name from users where id=?;
+   3.3 Only first_name and last_name can be edited  - create a form
+   UPDATE users SET first_name=?, last_name=? where id=?
+4. Delete user
+   Read only form - list all details
+   OK - to delete CANCEL - go back to users   
+   DELETE FROM users WHERE id=?

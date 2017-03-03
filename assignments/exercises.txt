@@ -88,5 +88,10 @@ logout button
 
 
 
+DB and file together
+--------------------
+download users as CSV file
 
+balu,ragala,baluragala@gmail.com
+zeo,zeo,zeo@zeo.com
 
