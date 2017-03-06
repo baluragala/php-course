@@ -25,4 +25,8 @@ fwrite($dest_file,$text);
 fclose($src_file);
 fclose($dest_file);
 
+$data = file_get_contents($dest);
+header('Content-Type:application/vnd.ms-excel');
+header('Content-Disposition: attachment; filename="arrays.php"');
+echo $data;
 
