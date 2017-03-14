@@ -1,0 +1,104 @@
+Zeolearn Course Manager
+-----------------------
+Classes:
+	User
+		id
+		first_name
+		last_name
+		email
+		password
+	Course
+		id
+		title
+		description
+		category
+		fee
+		created_at
+		updated_at
+	UserCourse
+		id
+		user_id
+		course_id
+		subscribed_date
+	Category
+		id
+		name
+		description
+		created_at
+		updated_at
+	Comment
+		id
+		user_id
+		course_id
+		text
+		created_at
+
+
+Functionality:
+	public
+	User signup and sign in functionality
+	Browse courses
+		display by category
+	Search by title
+	Sort by latest
+	Sort by price
+
+	Authenticated:
+	Subscribe to course
+	list subscribed courses
+	comment on course
+
+	Admin
+	CRUD operation for Category
+	CRUD operation for Course
+
+SQL:
+----
+CREATE TABLE Users(
+id INT AUTO_INCREMENT PRIMARY KEY,
+first_name varchar(30) NOT NULL,
+last_name varchar(30) NOT NULL,
+email varchar(50) UNIQUE NOT NULL,
+password varchar(16) NOT NULL,
+created_date date
+)
+
+CREATE TABLE Courses(
+id INT AUTO_INCREMENT PRIMARY KEY,
+title varchar(100) NOT NULL,
+description varchar(2000) NOT NULL,
+fee NUMERIC(12,4) NOT NULL,
+category_id INT,
+created_date date,
+updated_date date,
+FOREIGN KEY (category_id) REFERENCES Categories(id)
+)
+
+CREATE TABLE Categories(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name varchar(100) NOT NULL,
+description varchar(2000) NOT NULL,
+created_date date,
+updated_date date
+)
+
+CREATE TABLE UserCourses(
+id INT AUTO_INCREMENT PRIMARY KEY,
+user_id INT NOT NULL,
+course_id INT NOT NULL,
+subscribed_date date,
+FOREIGN KEY (course_id) REFERENCES Courses(id),
+FOREIGN KEY (user_id) REFERENCES Users(id)
+)
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE Comments(
+user_id INT NOT NULL,
+course_id INT NOT NULL,
+text VARCHAR(2000) NOT NULL,
+commented_date date,
+FOREIGN KEY (course_id) REFERENCES Courses(id),
+FOREIGN KEY (user_id) REFERENCES Users(id)
+)
+
+
