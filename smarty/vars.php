@@ -9,8 +9,14 @@
 require_once('lib/SMTemplate.php');
 
 $tpl = new SMTemplate();
-$smarty = $tpl->get_smarty();
-$name = "John";
+$data = array(
+    "name"=>"John",
+    "greetings"=>"Good Morning"
+);
+$tpl->render("vars",$data);
+
+/*$name = "John";
 $smarty->assign("name", $name);
 $smarty->assign("greetings", "Good Morning");
 $smarty->display("vars.tpl");
+*/

@@ -25,8 +25,13 @@ class SMTemplate
         $this->_smarty->config_dir = $smtemplate_config['config_dir'];
     }
 
-    function render($template)
+    function render($template,$data)
     {
+        foreach($data as $key=>$value){
+            echo $key;
+            $this->_smarty->assign($key,$value);
+        }
+        //logic loop on data and generate assign calls
         $this->_smarty->display($template . '.tpl');
     }
 
