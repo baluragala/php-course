@@ -2,17 +2,225 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ca8e19c-7e86-4d59-88f7-b375787639d6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Employee.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smarty/courses.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smarty/views/courses.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/smarty/views/layout.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/selectlist.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pear/selectlist.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smarty/lib/SMTemplate.php" afterPath="$PROJECT_DIR$/smarty/lib/SMTemplate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smarty/arrays.php" afterPath="$PROJECT_DIR$/smarty/arrays.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smarty/logical.php" afterPath="$PROJECT_DIR$/smarty/logical.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smarty/vars.php" afterPath="$PROJECT_DIR$/smarty/vars.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/templates_c/0e2c81f27dc29943a497acb6a9e90b05e1277149_0.file.courses.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/templates_c/18f8d8d5a3a47a9e1a0a21b89615e16afe86f83a_0.file.logical.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/templates_c/32a04c2336ec0aeaba0baee90ce0f5ae1f4dc741_0.file.array.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/templates_c/40f4f495b839a75a14bb8b6d020909d322f55ac8_0.file.home.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/templates_c/5165acc7bb832149f98b9762853b605ef87fd967_0.file.vars.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/templates_c/6c15368e6b8df9ad56f417d7aa6df3f95c8ea1a5_0.file.layout.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/templates_c/8760b5a65b15c3670dbb448da4159459b6b3f3cc_0.file.home.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/Autoloader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/Department.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/DepartmentDao.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/SMTemplate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/Smarty.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/SmartyBC.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/block.textformat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/templates_c/cf308c71af4dfb4f687dc040e5125ac719354cb4_0.file.loops.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/debug.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/views/depts.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/templates_c/e953a69259c10b1d98eb35ca767ea569500df6f9_0.file.home1.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/templates_c/ea78b317b476a90e6c41a65f6039461de032b82e_0.file.calendar.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/function.counter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/function.cycle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/function.fetch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/function.html_checkboxes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/function.html_image.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/function.html_options.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/function.html_radios.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/function.html_select_date.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/function.html_select_time.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/function.html_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/function.mailto.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/function.math.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/get_depts.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifier.capitalize.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifier.date_format.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifier.debug_print_var.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifier.escape.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifier.regex_replace.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifier.replace.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifier.spacify.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifier.truncate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.cat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.count_characters.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.count_paragraphs.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.count_sentences.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.count_words.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.default.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.escape.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.from_charset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.indent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.lower.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.noprint.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.string_format.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.strip.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.strip_tags.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.to_charset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.unescape.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.upper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/modifiercompiler.wordwrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/outputfilter.trimwhitespace.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regex/preg_grep.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regex/preg_match.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regex/preg_match_all.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regex/preg_quote.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regex/preg_replace.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regex/preg_split.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/shared.escape_special_chars.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/shared.literal_compiler_param.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/shared.make_timestamp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/shared.mb_str_replace.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/shared.mb_unicode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/shared.mb_wordwrap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_cacheresource.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_cacheresource_custom.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_cacheresource_keyvaluestore.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_data.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_block.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_cacheresource_file.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_append.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_assign.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_block.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_break.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_call.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_capture.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_config_load.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_continue.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_debug.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_eval.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_extends.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_for.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_foreach.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_if.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_include.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_include_php.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_insert.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_ldelim.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_make_nocache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_nocache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_private_block_plugin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_private_foreachsection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_private_function_plugin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_private_modifier.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_private_object_block_function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_private_object_function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_private_php.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_private_print_expression.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_private_registered_block.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_private_registered_function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_private_special_variable.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_rdelim.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_section.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_setfilter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_shared_inheritance.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compile_while.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_compilebase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_config_file_compiler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_configfilelexer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_configfileparser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_data.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_debug.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_extension_clear.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_extension_handler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_addautoloadfilters.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_adddefaultmodifiers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_append.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_appendbyref.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_assignbyref.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_assignglobal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_clearallassign.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_clearallcache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_clearassign.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_clearcache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_clearcompiledtemplate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_clearconfig.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_compileallconfig.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_compilealltemplates.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_configload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_createdata.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_getautoloadfilters.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_getconfigvars.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_getdebugtemplate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_getdefaultmodifiers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_getglobal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_getregisteredobject.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_getstreamvariable.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_gettags.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_gettemplatevars.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_loadfilter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_loadplugin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_mustcompile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_registercacheresource.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_registerclass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_registerdefaultconfighandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_registerdefaultpluginhandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_registerdefaulttemplatehandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_registerfilter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_registerobject.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_registerplugin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_registerresource.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_setautoloadfilters.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_setdebugtemplate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_setdefaultmodifiers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_unloadfilter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_unregistercacheresource.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_unregisterfilter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_unregisterobject.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_unregisterplugin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_method_unregisterresource.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_nocache_insert.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_parsetree.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_parsetree_code.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_parsetree_dq.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_parsetree_dqcontent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_parsetree_tag.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_parsetree_template.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_parsetree_text.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_resource_eval.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_resource_extends.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_resource_file.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_resource_php.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_resource_registered.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_resource_stream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_resource_string.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_runtime_cachemodify.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_runtime_capture.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_runtime_codeframe.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_runtime_filterhandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_runtime_foreach.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_runtime_getincludepath.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_runtime_inheritance.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_runtime_make_nocache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_runtime_tplfunction.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_runtime_updatecache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_runtime_updatescope.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_runtime_writefile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_smartytemplatecompiler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_template.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_templatebase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_templatecompilerbase.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_templatelexer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_templateparser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_testinstall.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_internal_undefined.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_resource.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_resource_custom.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_resource_recompiled.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_resource_uncompiled.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_security.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_template_cached.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_template_compiled.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_template_config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_template_resource_base.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_template_source.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_undefined_variable.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smarty_variable.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smartycompilerexception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/sysplugins/smartyexception.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smtemplate_config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/lib/smarty/plugins/variablefilter.htmlspecialchars.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="patrick.iws" />
@@ -38,49 +246,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pdo/db.php">
+      <file leaf-file-name="preg_match.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/regex/preg_match.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.882353" vertical-offset="150" max-vertical-offset="1350">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="17" selection-end-column="5" />
+            <state vertical-scroll-proportion="-2.9411764" vertical-offset="0" max-vertical-offset="425">
+              <caret line="4" column="41" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="selectlist.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pear/selectlist.php">
+      <file leaf-file-name="preg_match_all.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/regex/preg_match_all.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.588236" vertical-offset="300" max-vertical-offset="2175">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding>
-                <element signature="e#111#196#0#PHP" expanded="true" />
-                <marker date="1489585012302" expanded="true" signature="442:466" placeholder="SELECT * fro..department..." />
-                <marker date="1489585012302" expanded="true" signature="442:467" placeholder="SELECT * fro..departments..." />
-                <marker date="1489585012302" expanded="true" signature="442:469" placeholder="SELECT * fro..department..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="paginate.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/paginate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.09090909" vertical-offset="375" max-vertical-offset="1200">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.7352941" vertical-offset="0" max-vertical-offset="275">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pear/index.php">
+      <file leaf-file-name="preg_replace.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/regex/preg_replace.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.617647" vertical-offset="425" max-vertical-offset="1575">
-              <caret line="26" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="7" />
-              <folding>
-                <element signature="e#111#196#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-1.4705882" vertical-offset="0" max-vertical-offset="275">
+              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="preg_split.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/regex/preg_split.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.4705882" vertical-offset="0" max-vertical-offset="350">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="preg_grep.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/regex/preg_grep.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.9411764" vertical-offset="0" max-vertical-offset="325">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="preg_quote.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/regex/preg_quote.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.045454547" vertical-offset="0" max-vertical-offset="550">
+              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pcre.php" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pcre.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.676471" vertical-offset="8746" max-vertical-offset="12625">
+              <caret line="363" column="9" selection-start-line="363" selection-start-column="9" selection-end-line="363" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,16 +324,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/oop/AudioPlayer.php" />
-        <option value="$PROJECT_DIR$/oop/iPlayer.php" />
-        <option value="$PROJECT_DIR$/oop/iStorage.php" />
-        <option value="$PROJECT_DIR$/oop/FileStorage.php" />
-        <option value="$PROJECT_DIR$/oop/DBStorage.php" />
-        <option value="$PROJECT_DIR$/oop/Employee.php" />
-        <option value="$PROJECT_DIR$/oop/Overloading.php" />
-        <option value="$PROJECT_DIR$/oop/Course.php" />
-        <option value="$PROJECT_DIR$/oop/com/zeolearn/um/Course.php" />
-        <option value="$PROJECT_DIR$/oop/Application.php" />
         <option value="$PROJECT_DIR$/oop/com/zeolearn/cm/Manager.php" />
         <option value="$PROJECT_DIR$/oop/Calculator.php" />
         <option value="$PROJECT_DIR$/oop/Car.php" />
@@ -144,6 +365,16 @@
         <option value="$PROJECT_DIR$/Employee.php" />
         <option value="$PROJECT_DIR$/paginate.php" />
         <option value="$PROJECT_DIR$/pear/selectlist.php" />
+        <option value="$PROJECT_DIR$/dao/DepartmentDao.php" />
+        <option value="$PROJECT_DIR$/dao/Department.php" />
+        <option value="$PROJECT_DIR$/dao/get_depts.php" />
+        <option value="$PROJECT_DIR$/dao/views/depts.tpl" />
+        <option value="$PROJECT_DIR$/regex/preg_match.php" />
+        <option value="$PROJECT_DIR$/regex/preg_match_all.php" />
+        <option value="$PROJECT_DIR$/regex/preg_replace.php" />
+        <option value="$PROJECT_DIR$/regex/preg_split.php" />
+        <option value="$PROJECT_DIR$/regex/preg_grep.php" />
+        <option value="$PROJECT_DIR$/regex/preg_quote.php" />
       </list>
     </option>
   </component>
@@ -199,34 +430,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pear" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="patrick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pdo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -241,6 +444,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\patrick\dao" />
       <recent name="C:\xampp\htdocs\patrick\smarty\views" />
       <recent name="C:\xampp\htdocs\patrick\smarty" />
       <recent name="C:\xampp\htdocs\patrick\sm\lib" />
@@ -294,7 +498,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -303,7 +507,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17170954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17170954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -341,143 +545,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pdo/sqlite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.029411" vertical-offset="50" max-vertical-offset="675">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2141527" vertical-offset="185" max-vertical-offset="8700">
-          <caret line="12" column="63" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdo/1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="800">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7672253" vertical-offset="25913" max-vertical-offset="26525">
-          <caret line="1053" column="9" selection-start-line="1053" selection-start-column="9" selection-end-line="1053" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core_d.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35272726" vertical-offset="8131" max-vertical-offset="9075">
-          <caret line="333" column="0" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdo/transaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0689013" vertical-offset="413" max-vertical-offset="950">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <marker date="1489064230586" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/si/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5810056" vertical-offset="413" max-vertical-offset="1800">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-            <marker date="1489071252875" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1489071252875" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1489071252875" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1489071252875" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1489071252875" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1489071252875" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1489071252875" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1489071252875" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdo/dataload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5" vertical-offset="300" max-vertical-offset="950">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="false" />
-            <marker date="1489070251950" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/um/add_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44134077" vertical-offset="663" max-vertical-offset="2175">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="81" selection-end-column="7" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="false" />
-            <marker date="1488549850991" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdo/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59090906" vertical-offset="0" max-vertical-offset="550">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="e#7#91#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smarty/lib/smarty/plugins/function.math.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2600">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/ereg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35272726" vertical-offset="3831" max-vertical-offset="5725">
-          <caret line="161" column="9" selection-start-line="161" selection-start-column="9" selection-end-line="161" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdo/prepare.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1818181" vertical-offset="0" max-vertical-offset="875">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/um/get_users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.088235" vertical-offset="725" max-vertical-offset="1950">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-          <folding>
-            <marker date="1488548480553" expanded="true" signature="-1:-1" placeholder="SELECT id, f..users..." />
-            <marker date="1488548480553" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1488548480553" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1488548480553" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1488548480553" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1488548480553" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smarty/lib/smarty/templates_c/32a04c2336ec0aeaba0baee90ce0f5ae1f4dc741_0.file.array.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425">
@@ -683,7 +750,7 @@
         <state vertical-scroll-proportion="0.6818182" vertical-offset="0" max-vertical-offset="550">
           <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
+            <element signature="e#6#91#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -704,30 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smarty/arrays.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6363636" vertical-offset="0" max-vertical-offset="550">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smarty/views/array.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3181818" vertical-offset="0" max-vertical-offset="550">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/PDO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4761906" vertical-offset="3956" max-vertical-offset="34050">
-          <caret line="167" column="22" selection-start-line="167" selection-start-column="10" selection-end-line="167" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Employee.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.2058823" vertical-offset="0" max-vertical-offset="450">
@@ -735,24 +778,6 @@
           <folding>
             <element signature="e#7#92#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pear/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.617647" vertical-offset="425" max-vertical-offset="1575">
-          <caret line="26" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="7" />
-          <folding>
-            <element signature="e#111#196#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdo/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.882353" vertical-offset="150" max-vertical-offset="1350">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="17" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,9 +803,27 @@
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="e#111#196#0#PHP" expanded="true" />
-            <marker date="1489585012302" expanded="true" signature="442:466" placeholder="SELECT * fro..department..." />
-            <marker date="1489585012302" expanded="true" signature="442:467" placeholder="SELECT * fro..departments..." />
-            <marker date="1489585012302" expanded="true" signature="442:469" placeholder="SELECT * fro..department..." />
+            <marker date="1489585012302" expanded="true" signature="-1:-1" placeholder="SELECT * fro..department..." />
+            <marker date="1489585012302" expanded="true" signature="-1:-1" placeholder="SELECT * fro..departments..." />
+            <marker date="1489585012302" expanded="true" signature="-1:-1" placeholder="SELECT * fro..department..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/ereg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7618182" vertical-offset="3606" max-vertical-offset="5725">
+          <caret line="161" column="9" selection-start-line="161" selection-start-column="9" selection-end-line="161" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pear/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5121043" vertical-offset="275" max-vertical-offset="1575">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="e#111#196#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -789,6 +832,148 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.09090909" vertical-offset="375" max-vertical-offset="1200">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/PDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6771653" vertical-offset="32906" max-vertical-offset="34050">
+          <caret line="1330" column="31" selection-start-line="1330" selection-start-column="31" selection-end-line="1330" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/lib/smarty/plugins/function.math.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2600">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/lib/SMTemplate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45454547" vertical-offset="150" max-vertical-offset="1050">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smarty/views/array.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09090909" vertical-offset="0" max-vertical-offset="550">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/views/depts.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72727275" vertical-offset="0" max-vertical-offset="650">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smarty/arrays.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6818182" vertical-offset="0" max-vertical-offset="550">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/get_depts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6818182" vertical-offset="150" max-vertical-offset="700">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/DepartmentDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3181818" vertical-offset="0" max-vertical-offset="950">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <marker date="1489754712305" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..departments..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/Department.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5586592" vertical-offset="0" max-vertical-offset="1150">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#7#92#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdo/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3181818" vertical-offset="675" max-vertical-offset="1350">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regex/preg_match.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9411764" vertical-offset="0" max-vertical-offset="425">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regex/preg_match_all.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7352941" vertical-offset="0" max-vertical-offset="275">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regex/preg_replace.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4705882" vertical-offset="0" max-vertical-offset="275">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regex/preg_split.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4705882" vertical-offset="0" max-vertical-offset="350">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regex/preg_grep.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9411764" vertical-offset="0" max-vertical-offset="325">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pcre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.676471" vertical-offset="8746" max-vertical-offset="12625">
+          <caret line="363" column="9" selection-start-line="363" selection-start-column="9" selection-end-line="363" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regex/preg_quote.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.045454547" vertical-offset="0" max-vertical-offset="550">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
           <folding />
         </state>
       </provider>
